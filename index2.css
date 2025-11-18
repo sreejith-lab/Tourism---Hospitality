@@ -223,6 +223,10 @@ header nav ul li a:hover::after {
   padding: 20px 0px;
   overflow-x: hidden;
 }
+.Structure2 {
+  padding: 20px 0px;
+  overflow-y: hidden;
+}
 
 
 .animation {
@@ -345,6 +349,10 @@ header nav ul li a:hover::after {
   .animation p {
     font-size: small;
   }
+}
+
+.Header {
+    overflow-x: hidden;
 }
 
 .Header h2 {
@@ -676,6 +684,7 @@ header nav ul li a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .cta-button {
@@ -711,7 +720,7 @@ header nav ul li a:hover::after {
   width: 100%;
   display: flex;
   gap: 15px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Table8 .container1 {
@@ -904,15 +913,5 @@ footer {
   .footer-header {
     font-size: larger;
   }
-
-  /* .cta-button {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-
-  .cta-button1 {
-    font-size: 14px;
-    padding: 10px 15px;
-  } */
 }
 
