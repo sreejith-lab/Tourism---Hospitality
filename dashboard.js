@@ -33,7 +33,7 @@ new Chart(revCtx, {
 /* Radar Chart */
 const radCtx = document.getElementById("sentimentRadar");
 new Chart(radCtx, {
-  type: "radar",
+  type: "line",
   data: {
     labels: ["Cleanliness", "Service", "Value", "Local Experience", "Food"],
     datasets: [{ label: "Avg Score", data: [4.7, 4.6, 4.2, 4.6, 4.5], fill: true }],

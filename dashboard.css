@@ -219,7 +219,7 @@ header nav ul li a:hover::after {
   padding: 10px;
 }
 .card {
-  background: #0b1220;
+  background:wh;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
@@ -242,11 +242,11 @@ header nav ul li a:hover::after {
   align-items: center;
 }
 .meta {
-  color: white;
+  color: blue;
   font-size: 13px;
 }
 .value {
-  color: beige;
+  color: grey;
   font-size: 22px;
   font-weight: 700;
 }
@@ -260,12 +260,12 @@ header nav ul li a:hover::after {
   height: 200px;
 }
 .badge {
-  background: beige;
+  background: skyblue;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   padding: 6px 10px;
   border-radius: 8px;
   font-size: 12px;
-  color: blue;
+  color: white;
 }
 .row-head {
   display: flex;
@@ -298,11 +298,11 @@ td {
 
 strong {
   padding: 0px 5px;
-  color: beige;
+  color: black;
 }
 
 span {
-  color: skyblue;
+  color: blue;
   padding: 0px 5px;
 }
 
@@ -323,12 +323,12 @@ span {
   }
 }
 .sub {
-  color: beige;
+  color: black;
 }
 
 td,
 th {
-  color: beige;
+  color: black;
 }
 
 footer p {
