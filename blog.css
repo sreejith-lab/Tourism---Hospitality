@@ -27,7 +27,7 @@ header {
   z-index: 1000;
 }
 
-.logo  img {
+.logo img {
   width: 150px;
   padding: 0px 5px;
 }
@@ -107,7 +107,7 @@ header nav ul li a:hover::after {
   position: absolute;
   left: 0;
   bottom: -45px;
-  padding: 10px 7px;
+  padding: 10px 6px;
   color: darkred;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -215,7 +215,6 @@ header nav ul li a:hover::after {
 
 /* ---------------------------------------------------------------------------- */
 
-
 .Table1 {
   width: 100%;
   display: flex;
@@ -307,7 +306,7 @@ header nav ul li a:hover::after {
 }
 
 .Heads h2 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: darkred;
   text-align: center;
   font-size: xx-large;
@@ -317,9 +316,9 @@ header nav ul li a:hover::after {
   gap: 20px;
   padding: 20px;
   width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .container1 img {
@@ -332,7 +331,7 @@ header nav ul li a:hover::after {
 }
 
 .imgs-content h3 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: darkred;
   font-size: x-large;
   padding: 10px;
@@ -348,7 +347,7 @@ header nav ul li a:hover::after {
   height: 60vh;
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width: 850px) {
   .imgs-content p {
     text-align: justify;
   }
@@ -357,19 +356,19 @@ header nav ul li a:hover::after {
   }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
   .imgs-content h3 {
-  font-size: larger;
-  padding: 5px;
-  text-align: justify;
-}
+    font-size: larger;
+    padding: 5px;
+    text-align: justify;
+  }
 
-.imgs-content p {
-  padding: 10px;
-  font-size: medium;
-  font-weight: 500;
-}
-.container1 img {
+  .imgs-content p {
+    padding: 10px;
+    font-size: medium;
+    font-weight: 500;
+  }
+  .container1 img {
     height: 30vh;
   }
   .container1 {
@@ -383,49 +382,44 @@ header nav ul li a:hover::after {
   }
 }
 
-
 /* ------------------------------------------------------------- */
 
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 250px;
+  height: 38px;
+  margin: 0 10px;
+}
 
- .search-container {
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    width: 250px;
-    height: 38px;
-    margin: 0 10px;
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.search-container button {
+  border: none;
+  background: white;
+  color: darkred;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container button i {
+  color: darkred;
+}
+
+@media screen and (max-width: 690px) {
+  .search-container {
+    display: none;
   }
-
-  .search-container input {
-    border: none;
-    outline: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    flex: 1;
-  }
-
-  .search-container button {
-    border: none;
-    background: white;
-    color: darkred;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .search-container button i {
-    color: darkred;
-  }
-
-
-
-  @media screen and (max-width:690px) {
-    .search-container {
-        display: none;
-    }
-    
 }
 
 /* ------------------ FOOTER PAGE ------------------------ */
@@ -558,4 +552,3 @@ footer {
     padding: 10px 15px;
   } */
 }
-

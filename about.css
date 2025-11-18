@@ -107,7 +107,7 @@ header nav ul li a:hover::after {
   position: absolute;
   left: 0;
   bottom: -45px;
-  padding: 10px 7px;
+  padding: 10px 6px;
   color: darkred;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
