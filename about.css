@@ -304,6 +304,7 @@ header nav ul li a:hover::after {
   width: 100%;
   display: flex;
   gap: 15px;
+  padding: 10px;
 }
 
 .Container {
@@ -311,7 +312,7 @@ header nav ul li a:hover::after {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 12px;
+  border-radius: 12px;
 }
 
 .the-image img {
@@ -333,36 +334,365 @@ header nav ul li a:hover::after {
   font-weight: 500;
 }
 
-@media screen and (max-width:1100px) {
-    .Table3 {
-        width: 100%;
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 1100px) {
+  .Table3 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
-    .Container {
-        width: 100%;
-    }
+  .Container {
+    width: 100%;
+  }
 
-    .the-image img {
-        height: 45vh;
-    }
+  .the-image img {
+    height: 45vh;
+  }
 }
 
-@media screen and (max-width:550px) {
-    .image-content h2 {
-        font-size: larger;
-    }
-    .Header h3 {
-        font-size: x-large;
-    }
-    .Header p {
-        font-size: medium;
-        padding: 5px;
-    }
-    .content h3 {
-        font-size: large;
-    }
-    .content p {
-        font-size: small;
-    }
+@media screen and (max-width: 550px) {
+  .image-content h2 {
+    font-size: larger;
+  }
+  .Header h3 {
+    font-size: x-large;
+  }
+  .Header p {
+    font-size: medium;
+    padding: 5px;
+  }
+  .content h3 {
+    font-size: large;
+  }
+  .content p {
+    font-size: small;
+  }
+}
+
+.Table4 {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 12px;
+}
+
+.container1 {
+  width: 100%;
+}
+
+.container1 img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: beige;
+  height: 100vh;
+  object-position: center;
+}
+
+.container2 {
+  width: 100%;
+}
+
+.container2 h3 {
+  text-align: center;
+  font-size: xx-large;
+  padding: 30px;
+}
+
+.container2 p {
+  text-align: justify;
+  font-size: x-large;
+  text-wrap: wrap;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+@media screen and (max-width:1220px) {
+  .Table4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container2 h3 {
+  text-align: center;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.container2 p {
+  text-align: justify;
+  font-size: larger;
+  text-wrap: wrap;
+  line-height: 1.8;
+  padding: 10px;
+}
+.container1 img {
+  border-radius: 0%;
+  padding: 10px;
+}
+}
+
+@media screen and (max-width:620px) {
+  .container1 img {
+    height: 40vh;
+}
+
+.container2 h3 {
+  font-size: larger;
+}
+
+.container2 p {
+  font-size: small;
+  padding: 10px;
+}
+
+}
+
+/* ----------------------------------------------------- */
+
+.Table5 {
+  padding: 10px 5%;
+}
+
+.Table6 {
+  padding: 0px 5%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.Table6 .Cards {
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 12px;
+}
+
+.Cards img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  object-position: center;
+}
+
+.Table7 {
+  padding: 0px 5%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Table7 .Cards {
+  width: 33%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 12px;
+}
+
+
+@media screen and (max-width:950px) {
+  .Table7 {
+    display: flex;
+    flex-direction: column;
+  }
+  .Table7 .Cards {
+    width: 100%;
+  }
+  .Table7 .Cards img {
+    width: 100%;
+    object-position: top;
+  }
+  .Table6 {
+    flex-direction: column;
+  }
+  .Table6 .Cards {
+    width: 100%;
+    padding: 10px;
+  }
+  .Table6 .Cards img {
+    object-position: top center;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .Table6 .Cards img {
+    height: 30vh;
+  }
+  .Table6 .Cards h3 {
+    font-size: larger;
+  }
+  .Table6 .Cards p {
+    font-size: medium;
+  }
+  .Table7 .Cards img {
+    height: 30vh;
+  }
+  .Table7 .Cards h3 {
+    font-size: larger;
+  }
+  .Table7 .Cards p {
+    font-size: medium;
+  }
+}
+
+.Cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cards h3 {
+  padding: 5px;
+  font-size: x-large;
+  color: darkred;
+}
+
+.Cards p {
+  font-size: large;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+
+
+/* ------------------ FOOTER PAGE ------------------------ */
+
+footer {
+  overflow-x: hidden;
+}
+
+.footer-parent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: beige;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+
+.set1,
+.set2,
+.set3,
+.set4 {
+  flex: 300px;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+.set1 {
+  padding-top: 30px;
+}
+
+.set1 img {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+  padding: 0px;
+}
+
+.footer-para {
+  font-size: larger;
+}
+
+.set1 a {
+  text-decoration: none;
+}
+
+.set1 a i {
+  font-size: x-large;
+  color: darkred;
+  padding: 20px;
+}
+
+.set1 a i:hover {
+  color: red;
+}
+
+.set2 {
+  padding-top: 60px;
+}
+
+.footer-li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.footer-li a {
+  display: inline-block;
+  font-size: larger;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.footer-li > a:hover {
+  color: red;
+}
+
+.footer-header {
+  color: darkred;
+}
+
+.set3 {
+  padding-top: 60px;
+}
+
+.set3 .footer-para {
+  padding: 10px;
+  font-weight: 400;
+}
+
+.set4 {
+  padding-top: 60px;
+}
+
+.set4 > .footer-para {
+  padding: 10px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 769px) {
+  .footer-parent {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer-para {
+    font-size: medium;
+  }
+
+  .footer-li a {
+    font-size: medium;
+  }
+
+  .footer-header {
+    font-size: larger;
+  }
+
+  /* .cta-button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .cta-button1 {
+    font-size: 14px;
+    padding: 10px 15px;
+  } */
+}
+
+@media screen and (max-width: 350px) {
+  .set1 .logo {
+    width: 200px;
+  }
 }
