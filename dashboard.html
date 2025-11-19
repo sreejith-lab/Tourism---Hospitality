@@ -12,14 +12,18 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./dashboard.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   </head>
   <body>
     <header>
@@ -74,11 +78,11 @@
         <li><a href="./signin.html">Sign In</a></li>
       </ul>
     </div>
-      <div class="controls">
-        <span class="pill" style="color: navy;">Period: <strong style="color: navy;">Last 30 days</strong></span>
-      </div>
-    </header>
-
+    <div class="controls">
+      <span class="pill" style="color: navy"
+        >Period: <strong style="color: navy">Last 30 days</strong></span
+      >
+    </div>
     <section class="grid">
       <div class="card col-4">
         <div class="kpi">
@@ -86,15 +90,22 @@
             <div class="meta">Total Visitors (Monthly)</div>
             <div class="value" id="visitorsTotal"></div>
           </div>
-          <div style="text-align:right">
+          <div style="text-align: right">
             <div class="meta">Avg Stay</div>
             <div class="value">4.8d</div>
           </div>
         </div>
         <div class="small-list">
-          <div><span class="meta">Top Countries</span><strong>India, UAE, UK, USA</strong></div>
-          <div><span class="meta">Peak Season</span><strong>Oct–Jan</strong></div>
-          <div><span class="meta">Avg Rating</span><strong>4.6 / 5</strong></div>
+          <div>
+            <span class="meta">Top Countries</span
+            ><strong>India, UAE, UK, USA</strong>
+          </div>
+          <div>
+            <span class="meta">Peak Season</span><strong>Oct–Jan</strong>
+          </div>
+          <div>
+            <span class="meta">Avg Rating</span><strong>4.6 / 5</strong>
+          </div>
         </div>
       </div>
 
@@ -105,7 +116,10 @@
             <div class="value" id="occupancy">78%</div>
             <div class="sub">Popular: Luxury, Boutique, Homestays</div>
           </div>
-          <canvas id="occupancyDonut" style="max-width: 220px; max-height: 220px;"></canvas>
+          <canvas
+            id="occupancyDonut"
+            style="max-width: 220px; max-height: 220px"
+          ></canvas>
         </div>
         <div class="small-list">
           <div><span class="meta">Booking Sources</span></div>
@@ -139,19 +153,42 @@
       <div class="card col-4">
         <strong>Top Destinations</strong>
         <div class="small-list">
-          <div><span class="meta">1. Goa</span><span>Beaches & nightlife</span></div>
-          <div><span class="meta">2. Jaipur</span><span>Heritage & culture</span></div>
-          <div><span class="meta">3. Manali</span><span>Mountains & adventure</span></div>
-          <div><span class="meta">4. Kochi</span><span>Backwaters & cuisine</span></div>
+          <div>
+            <span class="meta">1. Goa</span><span>Beaches & nightlife</span>
+          </div>
+          <div>
+            <span class="meta">2. Jaipur</span><span>Heritage & culture</span>
+          </div>
+          <div>
+            <span class="meta">3. Manali</span
+            ><span>Mountains & adventure</span>
+          </div>
+          <div>
+            <span class="meta">4. Kochi</span><span>Backwaters & cuisine</span>
+          </div>
         </div>
         <hr />
         <strong>Upcoming Events</strong>
         <table>
-          <thead><tr><th>Event</th><th>Date</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>International Travel Expo</td><td>Dec 5</td></tr>
-            <tr><td>Cultural Food Festival</td><td>Jan 18</td></tr>
-            <tr><td>Beach Music Carnival</td><td>Feb 12</td></tr>
+            <tr>
+              <td>International Travel Expo</td>
+              <td>Dec 5</td>
+            </tr>
+            <tr>
+              <td>Cultural Food Festival</td>
+              <td>Jan 18</td>
+            </tr>
+            <tr>
+              <td>Beach Music Carnival</td>
+              <td>Feb 12</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -163,7 +200,9 @@
           <div>
             <div class="meta">Average Rating</div>
             <div class="value">4.6 / 5</div>
-            <div class="meta">Top feedback: Cleanliness, Local experiences, Quick service</div>
+            <div class="meta">
+              Top feedback: Cleanliness, Local experiences, Quick service
+            </div>
           </div>
           <canvas id="sentimentRadar"></canvas>
         </div>
@@ -172,18 +211,40 @@
       <div class="card col-6">
         <strong>Most Booked Activities</strong>
         <table>
-          <thead><tr><th>Activity</th><th>Avg Cost</th><th>Bookings</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Avg Cost</th>
+              <th>Bookings</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>Sightseeing tours</td><td>$45</td><td>12,400</td></tr>
-            <tr><td>Water sports</td><td>$70</td><td>5,200</td></tr>
-            <tr><td>Heritage walks</td><td>$20</td><td>6,800</td></tr>
-            <tr><td>Food trails</td><td>$30</td><td>9,100</td></tr>
+            <tr>
+              <td>Sightseeing tours</td>
+              <td>$45</td>
+              <td>12,400</td>
+            </tr>
+            <tr>
+              <td>Water sports</td>
+              <td>$70</td>
+              <td>5,200</td>
+            </tr>
+            <tr>
+              <td>Heritage walks</td>
+              <td>$20</td>
+              <td>6,800</td>
+            </tr>
+            <tr>
+              <td>Food trails</td>
+              <td>$30</td>
+              <td>9,100</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
     <footer data-aos="fade-up">
-    <div id="vanta-fr"></div>
+      <div id="vanta-fr"></div>
 
       <div class="footer-parent">
         <div class="set1">
@@ -237,6 +298,14 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./dashboard.js"></script>
-    <script src="./footer.js"></script>
+  <script src="./footer.js"></script>
   <script src="./swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+      });
+    </script>
 </html>

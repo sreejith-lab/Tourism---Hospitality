@@ -18,6 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   </head>
   <body>
     <header>
@@ -242,8 +244,9 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="footer-parent" data-aos="zoom-in">
+    <footer data-aos="fade-up">
+      <div id="vanta-fr"></div>
+      <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
           <p class="footer-para">
@@ -292,8 +295,10 @@
         </div>
       </div>
     </footer>
+
   </body>
   <script src="./swiper.js"></script>
+  <script src="./footer.js"></script>
   <script src="./search2.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

@@ -312,10 +312,15 @@ span {
   .col-4,
   .col-6,
   .col-8 {
+    text-align: start;
     grid-column: span 12;
   }
   .two-col-gap {
     flex-direction: column;
+  }
+  tr {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -333,11 +338,129 @@ th {
   color: black;
 }
 
-footer p {
-  width: 100%;
+
+/* ------------------ FOOTER PAGE ------------------------ */
+
+footer {
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.footer-parent {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#vanta-fr{
+min-height: 100vh;
+position: absolute;
+inset: 0;
+}
+.set1,
+.set2,
+.set3,
+.set4 {
+  flex: 300px;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+.set1 {
+  padding-top: 30px;
+}
+
+.set1 img {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+  padding: 0px;
+}
+
+.footer-para {
+  font-size: larger;
+}
+
+.set1 a {
+  text-decoration: none;
+}
+
+.set1 a i {
+  font-size: x-large;
+  color: darkred;
+  padding: 20px;
+}
+
+.set1 a i:hover {
+  color: red;
+}
+
+.set2 {
+  padding-top: 60px;
+}
+
+.footer-li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.footer-li a {
+  display: inline-block;
+  font-size: larger;
+  padding: 10px;
+  text-decoration: none;
   color: black;
   font-weight: 600;
+}
+
+.footer-li > a:hover {
+  color: red;
+}
+
+.footer-header {
+  color: darkred;
+}
+
+.set3 {
+  padding-top: 60px;
+}
+
+.set3 .footer-para {
   padding: 10px;
-  font-size: medium;
-  text-align: center;
+  font-weight: 400;
+}
+
+.set4 {
+  padding-top: 60px;
+}
+
+.set4 > .footer-para {
+  padding: 10px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 769px) {
+  .footer-parent {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer-para {
+    font-size: medium;
+  }
+
+  .footer-li a {
+    font-size: medium;
+  }
+
+  .footer-header {
+    font-size: larger;
+  }
 }

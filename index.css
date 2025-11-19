@@ -789,7 +789,7 @@ header nav ul li a:hover::after {
 /* ------------------ FOOTER PAGE ------------------------ */
 
 footer {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .footer-parent {
@@ -802,7 +802,7 @@ footer {
 }
 
 #vanta-fr{
-/* height: 100vh; */
+min-height: 100vh;
 position: absolute;
 inset: 0;
 }

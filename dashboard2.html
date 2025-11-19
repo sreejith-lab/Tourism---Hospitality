@@ -22,6 +22,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -126,54 +129,55 @@
         <h3>Customer Sentiment Radar</h3>
         <canvas id="sentimentRadar"></canvas>
       </div>
-        <!-- Activities Table -->
-        <div class="card table-card">
-          <h3>Most Booked Activities</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Activity</th>
-                <th>Avg Cost</th>
-                <th>Bookings</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sightseeing Tours</td>
-                <td>$45</td>
-                <td>12,400</td>
-              </tr>
-              <tr>
-                <td>Water Sports</td>
-                <td>$70</td>
-                <td>5,200</td>
-              </tr>
-              <tr>
-                <td>Heritage Walks</td>
-                <td>$20</td>
-                <td>6,800</td>
-              </tr>
-              <tr>
-                <td>Food Trails</td>
-                <td>$30</td>
-                <td>9,100</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <!-- Activities Table -->
+      <div class="card table-card">
+        <h3>Most Booked Activities</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Avg Cost</th>
+              <th>Bookings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sightseeing Tours</td>
+              <td>$45</td>
+              <td>12,400</td>
+            </tr>
+            <tr>
+              <td>Water Sports</td>
+              <td>$70</td>
+              <td>5,200</td>
+            </tr>
+            <tr>
+              <td>Heritage Walks</td>
+              <td>$20</td>
+              <td>6,800</td>
+            </tr>
+            <tr>
+              <td>Food Trails</td>
+              <td>$30</td>
+              <td>9,100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-        <!-- Top Destinations -->
-        <div class="card table-card">
-          <h3>Top Trending Destinations</h3>
-          <ul class="list">
-            <li><strong>1.Maldives</strong> — Beaches & Nightlife</li>
-            <li><strong>2.Germany</strong> — Heritage & Royal Culture</li>
-            <li><strong>3.Finland</strong> — Mountains & Adventure</li>
-            <li><strong>4.Italy</strong> — Backwaters & Cuisine</li>
-          </ul>
-        </div>
+      <!-- Top Destinations -->
+      <div class="card table-card">
+        <h3>Top Trending Destinations</h3>
+        <ul class="list">
+          <li><strong>1.Maldives</strong> — Beaches & Nightlife</li>
+          <li><strong>2.Germany</strong> — Heritage & Royal Culture</li>
+          <li><strong>3.Finland</strong> — Mountains & Adventure</li>
+          <li><strong>4.Italy</strong> — Backwaters & Cuisine</li>
+        </ul>
+      </div>
     </section>
     <footer data-aos="fade-up">
+      <div id="vanta-fr"></div>
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -223,8 +227,17 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/pm/chart.js"></script>
-    <script src="./dashboard2.js"></script>
-    <script src="./swiper.js"></script>
   </body>
+  <script src="https://cdn.jsdelivr.net/pm/chart.js"></script>
+  <script src="./dashboard2.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./footer.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </html>

@@ -236,8 +236,8 @@ header nav ul li a:hover::after {
   padding: 20px;
 }
 
-canvas {
-    max-height: 400px;
+.card canvas {
+  max-height: 400px;
 }
 
 .card {
@@ -274,17 +274,17 @@ canvas {
 }
 
 .big-card {
-    text-align: center;
+  text-align: center;
   grid-column: span 12;
 }
 
 .mid-card {
-    text-align: center;
+  text-align: center;
   grid-column: span 4;
 }
 
 .table-card {
-    width: 100%;
+  width: 100%;
   grid-column: span 6;
 }
 
@@ -325,21 +325,25 @@ table td {
   }
 }
 
-
 /* ------------------ FOOTER PAGE ------------------------ */
 
 footer {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .footer-parent {
   display: flex;
   flex-wrap: wrap;
-  background-color: beige;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  margin-top: 30px;
   overflow-x: hidden;
+  position: relative;
+}
+
+#vanta-fr {
+  min-height: 100vh;
+  position: absolute;
+  inset: 0;
 }
 
 .set1,
@@ -444,15 +448,5 @@ footer {
 
   .footer-header {
     font-size: larger;
-  }
-
-  .cta-button {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-
-  .cta-button1 {
-    font-size: 14px;
-    padding: 10px 0px;
   }
 }

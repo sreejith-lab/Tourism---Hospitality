@@ -217,7 +217,7 @@ header nav ul li a:hover::after {
 
 .contact-section {
   z-index: 10;
-  background-image: url(Assests/flight-concept-with-grapefruit-sunglasses_11zon_11zon.webp);
+  /* background-image: url(Assests/flight-concept-with-grapefruit-sunglasses_11zon_11zon.webp); */
   background-position: bottom;
   min-height: 100vh;
 }
@@ -335,21 +335,23 @@ textarea::placeholder {
 /* ------------------ FOOTER PAGE ------------------------ */
 
 footer {
-  overflow-x: hidden;
-  z-index: 10;
+  overflow: hidden;
 }
 
 .footer-parent {
   display: flex;
   flex-wrap: wrap;
-  background-color: beige;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  margin-top: 30px;
   overflow-x: hidden;
-  z-index: 10;
+  position: relative;
 }
 
+#vanta-fr{
+min-height: 100vh;
+position: absolute;
+inset: 0;
+}
 .set1,
 .set2,
 .set3,
