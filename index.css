@@ -786,6 +786,70 @@ header nav ul li a:hover::after {
   }
 }
 
+.Table9 {
+  padding: 10px 5%;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.Table9 .container1 {
+  width: 33%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Table9 .container2 {
+  width: 34%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Table9 .container3 {
+  width: 33%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Table9 .container .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pack {
+  padding: 10px;
+}
+
+.pack li p {
+  padding: 5px;
+  color: black;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .Table9 {
+    flex-wrap: wrap;
+  }
+  .Table9 .container {
+    width: 100%;
+  }
+  .Table9 .container {
+    width: 100%;
+  }
+  .Table9 .container {
+    width: 100%;
+  }
+}
+
 /* ------------------ FOOTER PAGE ------------------------ */
 
 footer {
@@ -923,4 +987,3 @@ footer {
     padding: 10px 12px;
   }
 }
-
